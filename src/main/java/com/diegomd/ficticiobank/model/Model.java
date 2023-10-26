@@ -12,6 +12,8 @@ import java.util.regex.Pattern;
 public class Model {
     static View view = new View();
 
+    public static void atmMenu() {}
+
     public static void menuPrincipal(DataBase db) {
         view.print("menu-principal");
         int opc = Integer.parseInt(obterEtradaDados("^[1-7]{1}$"));

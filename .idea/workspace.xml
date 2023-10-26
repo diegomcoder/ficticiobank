@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5dcfb45-7d21-442f-b42c-d0e087b52032" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/ATM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/layouts/ATMFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/layouts/StarterScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/layouts/services/ATMPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/assets/atm-frame.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/assets/atm-frame.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/database/STATEMENTS_DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/database/STATEMENTS_DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/layouts/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/layouts/ATM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/layouts/components/LateralButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/layouts/components/LateralButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/model/Model.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -37,24 +48,25 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "productionGUI",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/md_di/My Drive/Study Repositories/ficticiobank/src/main/java/com/diegomd/ficticiobank/layouts/components",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;productionGUI&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/md_di/My Drive/Study Repositories/ficticiobank-api&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\md_di\My Drive\Study Repositories\ficticiobank\src\main\assets" />
       <recent name="C:\Users\md_di\My Drive\Study Repositories\ficticiobank\src\main\java\com\diegomd\ficticiobank\layouts\components" />
       <recent name="C:\Users\md_di\My Drive\Study Repositories\ficticiobank\src\main\java\com\diegomd\ficticiobank\layouts" />
       <recent name="C:\Users\md_di\My Drive\Study Repositories\FicticioBank\src\main\assets" />
       <recent name="C:\Users\md_di\My Drive\Study Repositories\FicticioBank" />
-      <recent name="C:\Users\md_di\My Drive\Study Repositories\FicticioBank\src\main\java\com\diegomd\ficticiobank" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.diegomd.ficticiobank.model" />
