@@ -1,14 +1,14 @@
 package com.diegomd.ficticiobank.layouts;
 
-import com.diegomd.ficticiobank.layouts.services.ATMPanel;
-
 import javax.swing.*;
-import java.awt.*;
+import java.util.UUID;
 
 public class ATMFrame extends JFrame {
+    private UUID atmId;
     ATMPanel panel;
     public ATMFrame() {
-        panel = new ATMPanel();
+        atmId = UUID.randomUUID();
+        panel = new ATMPanel(atmId);
         this.add(panel);
         this.setTitle("FicticioBank ATM");
         this.setResizable(false);

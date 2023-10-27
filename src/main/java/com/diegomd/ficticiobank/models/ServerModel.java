@@ -1,18 +1,58 @@
-package com.diegomd.ficticiobank.model;
+package com.diegomd.ficticiobank.models;
 
 import com.diegomd.ficticiobank.database.DataBase;
+import com.diegomd.ficticiobank.database.SECTIONS_DB;
 import com.diegomd.ficticiobank.entities.Cliente;
 import com.diegomd.ficticiobank.entities.Conta;
+import com.diegomd.ficticiobank.models.request.RequestModel;
+import com.diegomd.ficticiobank.models.response.ResponseModel;
 import com.diegomd.ficticiobank.view.View;
+import com.google.gson.Gson;
 
+import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Scanner;
+import java.util.UUID;
 import java.util.regex.Pattern;
 
 // CLASSE RESPONSÁVEL PELAS REGRAS DE NEGÓCIO
-public class Model {
+public class ServerModel {
     static View view = new View();
+    static Gson gson = new Gson();
+    private static List<Section> sections;
 
-    public static void atmMenu() {}
+    public static Section createNewSection(UUID atmId) {
+        return new Section(atmId, "newSection");
+    }
+
+    public static ResponseModel handleRequest(RequestModel request) {
+
+        if (request.getContext.equalsIgnoreCase("newSection")) {
+            Section section = SECTIONS_DB.findByAtmClientId(request.atmClientId);
+            System.out.println("section: " + section);
+
+            if (section == null) {
+                SECTIONS_DB.save(createNewSection(request.atmClientId));
+                return new ResponseModel().toNewSectionRequest(SECTIONS_DB.findByAtmClientId(request.atmClientId),request.getContext);
+            } else {
+                return new ResponseModel().toNewSectionRequest(section, "newSection");
+            }
+        }
+
+        return null;
+    }
+
+    public static String importRequest(String jsonReq) {
+        try {
+            RequestModel reqObj = gson.fromJson(jsonReq, RequestModel.class);
+            return gson.toJson(handleRequest(reqObj));
+        } catch (Exception e) {
+            System.out.println("Error in ServerModel when tried to parse json to object");
+            System.out.println(e.getMessage());
+        }
+
+        return null;
+    }
 
     public static void menuPrincipal(DataBase db) {
         view.print("menu-principal");

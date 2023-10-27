@@ -3,12 +3,11 @@ package com.diegomd.ficticiobank;
 import com.diegomd.ficticiobank.database.DataBase;
 import com.diegomd.ficticiobank.entities.Cliente;
 import com.diegomd.ficticiobank.entities.Conta;
-import com.diegomd.ficticiobank.layouts.ATM;
 import com.diegomd.ficticiobank.layouts.ATMFrame;
-import com.diegomd.ficticiobank.model.Model;
+import com.diegomd.ficticiobank.models.ServerModel;
 import com.diegomd.ficticiobank.view.View;
 
-public class App extends Model {
+public class App extends ServerModel {
     public static void main( String[] args ) {
 //        View view = new View();
 //        DataBase db = new DataBase();

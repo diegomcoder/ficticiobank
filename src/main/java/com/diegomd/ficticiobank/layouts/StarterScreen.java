@@ -5,6 +5,6 @@ import com.diegomd.ficticiobank.layouts.components.Screen;
 
 public class StarterScreen extends DisplayArea {
     public StarterScreen() {
-        this.add(new Screen("src/main/assets/ATM.png"));
+        this.add(new Screen("src/main/assets/atm-first-screen.png"));
     }
 }
