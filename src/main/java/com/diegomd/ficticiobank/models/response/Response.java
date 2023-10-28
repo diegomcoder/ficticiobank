@@ -1,17 +1,14 @@
 package com.diegomd.ficticiobank.models.response;
 
 import com.diegomd.ficticiobank.models.Section;
-import com.diegomd.ficticiobank.models.request.Attachments;
 
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
-public class ResponseModel {
+public class Response {
     public UUID atmClientId;
     public UUID sectionId;
     public String sectionOpenedAt;
@@ -23,7 +20,7 @@ public class ResponseModel {
     public ArrayList<String> availableOptions;
     public ArrayList<Account> accounts;
 // LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"));
-    public ResponseModel toNewSectionRequest(Section sectionCreated, String currentContext) {
+    public Response toNewSectionRequest(Section sectionCreated, String currentContext) {
         this.atmClientId = sectionCreated.getAtmClientId();
         this.sectionId = sectionCreated.getSectionId();
         this.sectionOpenedAt = sectionCreated.getSectionOpenedAt();

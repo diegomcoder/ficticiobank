@@ -9,14 +9,15 @@ import java.util.UUID;
 public class SECTIONS_DB {
     private static final List<Section> sections = new ArrayList<>();
 
-    public static void save(Section section) {
+    public static Section save(Section section) {
         sections.add(section);
+        return section;
     }
 
     public static Section findByAtmClientId(UUID atmClientId) {
         Section foundSection = null;
         for (Section section : sections) {
-            if (section.getAtmClientId() == atmClientId) {
+            if (section.getAtmClientId().equals(atmClientId)) {
                 foundSection = section;
                 break;
             }
