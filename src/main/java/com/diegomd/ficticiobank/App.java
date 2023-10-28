@@ -1,13 +1,9 @@
 package com.diegomd.ficticiobank;
 
-import com.diegomd.ficticiobank.database.DataBase;
-import com.diegomd.ficticiobank.entities.Cliente;
-import com.diegomd.ficticiobank.entities.Conta;
 import com.diegomd.ficticiobank.layouts.ATMFrame;
-import com.diegomd.ficticiobank.models.ServerModel;
-import com.diegomd.ficticiobank.view.View;
+import com.diegomd.ficticiobank.models.Server;
 
-public class App extends ServerModel {
+public class App extends Server {
     public static void main( String[] args ) {
 //        View view = new View();
 //        DataBase db = new DataBase();
