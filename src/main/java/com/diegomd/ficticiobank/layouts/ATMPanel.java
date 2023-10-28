@@ -8,6 +8,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.util.UUID;
 
 public class ATMPanel extends JPanel implements ActionListener {
@@ -63,7 +64,11 @@ public class ATMPanel extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         int actionCommand = Integer.parseInt(e.getActionCommand());
-        model.handleActionCommand(screen, actionCommand);
+        try {
+            model.handleActionCommand(screen, actionCommand);
+        } catch (IOException | InterruptedException ex) {
+            throw new RuntimeException(ex);
+        }
         //contextAnalyser(actionCommand);
     }
 }

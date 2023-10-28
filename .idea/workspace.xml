@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a5dcfb45-7d21-442f-b42c-d0e087b52032" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/database/SECTIONS_DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/database/SECTIONS_DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/layouts/ATMPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/layouts/ATMPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/models/ATMModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/models/ATMModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/models/ServerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/models/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/models/request/RequestModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/models/request/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/models/response/ResponseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/models/response/Response.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -67,6 +68,21 @@
       <recent name="com.diegomd.ficticiobank.entities.client" />
       <recent name="com.diegomd.ficticiobank.model" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="FicticioBank" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="FicticioBank" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
