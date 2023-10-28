@@ -4,19 +4,18 @@ import com.diegomd.ficticiobank.database.DataBase;
 import com.diegomd.ficticiobank.database.SECTIONS_DB;
 import com.diegomd.ficticiobank.entities.Cliente;
 import com.diegomd.ficticiobank.entities.Conta;
-import com.diegomd.ficticiobank.models.request.RequestModel;
-import com.diegomd.ficticiobank.models.response.ResponseModel;
+import com.diegomd.ficticiobank.models.request.Request;
+import com.diegomd.ficticiobank.models.response.Response;
 import com.diegomd.ficticiobank.view.View;
 import com.google.gson.Gson;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Scanner;
 import java.util.UUID;
 import java.util.regex.Pattern;
 
 // CLASSE RESPONSÁVEL PELAS REGRAS DE NEGÓCIO
-public class ServerModel {
+public class Server {
     static View view = new View();
     static Gson gson = new Gson();
     private static List<Section> sections;
@@ -25,30 +24,32 @@ public class ServerModel {
         return new Section(atmId, "newSection");
     }
 
-    public static ResponseModel handleRequest(RequestModel request) {
+    public static Response handleRequest(Request request) {
 
-        if (request.getContext.equalsIgnoreCase("newSection")) {
+        if (request.context.equalsIgnoreCase("newSection")) {
+
             Section section = SECTIONS_DB.findByAtmClientId(request.atmClientId);
-            System.out.println("section: " + section);
 
-            if (section == null) {
-                SECTIONS_DB.save(createNewSection(request.atmClientId));
-                return new ResponseModel().toNewSectionRequest(SECTIONS_DB.findByAtmClientId(request.atmClientId),request.getContext);
-            } else {
-                return new ResponseModel().toNewSectionRequest(section, "newSection");
-            }
+            if (section == null)
+                return new Response().toNewSectionRequest(
+                        SECTIONS_DB.save(createNewSection(request.atmClientId)),request.context);
+
+            else
+                return new Response().toNewSectionRequest(section, "newSection");
+
         }
 
         return null;
     }
 
     public static String importRequest(String jsonReq) {
+
         try {
-            RequestModel reqObj = gson.fromJson(jsonReq, RequestModel.class);
+            Request reqObj = gson.fromJson(jsonReq, Request.class);
             return gson.toJson(handleRequest(reqObj));
+
         } catch (Exception e) {
-            System.out.println("Error in ServerModel when tried to parse json to object");
-            System.out.println(e.getMessage());
+            System.out.println("InternalServerError when tried to parse json to object Error= "+e.getMessage());
         }
 
         return null;
