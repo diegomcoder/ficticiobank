@@ -4,10 +4,12 @@ import com.diegomd.ficticiobank.layouts.components.Screen;
 import com.diegomd.ficticiobank.models.request.Request;
 import com.diegomd.ficticiobank.models.response.Response;
 import com.google.gson.Gson;
+import com.google.gson.internal.bind.util.ISO8601Utils;
 
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
+import java.net.http.HttpHeaders;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.UUID;
@@ -31,7 +33,8 @@ public class ATMModel {
             // qual vai ser o método, qual a url, os headers etc
             HttpRequest request = HttpRequest.newBuilder()
                     .GET()
-                    .uri(URI.create("http://localhost:8080/api/test"))
+                    .uri(URI.create("http://localhost:8080/api/new-section"))
+                    .header("atm-id", String.valueOf(atmId))
                     .build();
 
             // Executa a requisição, pode definir o timeout da conexão, como vai ser feita a chamada (se síncrona
@@ -40,6 +43,7 @@ public class ATMModel {
 
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 
+            System.out.println(response.statusCode());
             System.out.println(response.body());
 //            String jsonResp = Server.importRequest(gson.toJson(createSectionRq));
 //            Response respObj = gson.fromJson(jsonResp, Response.class);

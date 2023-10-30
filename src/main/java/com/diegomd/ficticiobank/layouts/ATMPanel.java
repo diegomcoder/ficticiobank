@@ -51,12 +51,8 @@ public class ATMPanel extends JPanel implements ActionListener {
             case 4 -> System.out.println(4);
             case 5 -> System.out.println(5);
             case 6 -> System.out.println(6);
-            case 7 -> {
-                screen.redesign("src/main/assets/I-01.png");
-            }
-            case 8 -> {
-                screen.redesign("src/main/assets/atm-main-menu.png");
-            }
+            case 7 -> screen.redesign("src/main/assets/I-01.png");
+            case 8 -> screen.redesign("src/main/assets/atm-main-menu.png");
             default -> System.out.println("Err.: Button event unknown");
         }
     }

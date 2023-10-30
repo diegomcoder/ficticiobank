@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a5dcfb45-7d21-442f-b42c-d0e087b52032" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/database/ACCOUNTS_DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/database/ACCOUNTS_DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/database/STATEMENTS_DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/database/STATEMENTS_DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/database/USERS_DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/database/USERS_DB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/layouts/ATMPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/layouts/ATMPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/models/ATMModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diegomd/ficticiobank/models/ATMModel.java" afterDir="false" />
     </list>
@@ -44,25 +47,25 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;productionGUI&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/md_di/My Drive/Study Repositories/todolist-by-rocketseat-java-course&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "productionGUI",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/md_di/My Drive/Projects/Java/FicticioBank/ficticiobank/src/main/java/com/diegomd/ficticiobank",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\md_di\My Drive\Projects\Java\FicticioBank\ficticiobank\src\main\java\com\diegomd\ficticiobank" />
       <recent name="C:\Users\md_di\My Drive\Study Repositories\ficticiobank\src\main\assets" />
       <recent name="C:\Users\md_di\My Drive\Study Repositories\ficticiobank\src\main\java\com\diegomd\ficticiobank\layouts\components" />
       <recent name="C:\Users\md_di\My Drive\Study Repositories\ficticiobank\src\main\java\com\diegomd\ficticiobank\layouts" />
       <recent name="C:\Users\md_di\My Drive\Study Repositories\FicticioBank\src\main\assets" />
-      <recent name="C:\Users\md_di\My Drive\Study Repositories\FicticioBank" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.diegomd.ficticiobank.entities.client" />
